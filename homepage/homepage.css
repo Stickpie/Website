@@ -1,0 +1,106 @@
+html, body {
+    margin: 0;
+    padding: 0 ;
+    background-color: rgb(48, 48, 50);
+    color: white;
+    font-family: Roboto;
+    height: 1500px;
+}
+
+.header {
+    position: fixed;
+    background-color: rgb(48, 48, 50);
+    width: 100%;
+    display:grid;
+    grid-template-columns: 30px 1fr 200px;
+    height: 35px;
+    border-bottom: 1px solid rgb(95, 96, 97);
+    padding-top: 8px;
+    padding-right: 50px;
+    padding-left: 15px;
+}
+
+.headerLink {
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.headerLink:hover {
+    color:red;
+}
+
+.homeImage {
+    width: 22px;
+}
+
+.homeImage:hover {
+    filter: invert(39%) sepia(100%) saturate(7498%) hue-rotate(-15deg) brightness(96%) contrast(101%); /* Red color */
+}
+
+.introPage {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    padding-top: 110px;
+    margin-bottom: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.intro {
+    /*background-color: red;*/
+    max-width: 600px;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 75px;
+}
+
+.profile {
+    /*background-color: blue;*/
+}
+
+.profileImage {
+    width: 300px;
+}
+
+.links {
+    display: flex;
+    place-content: center;
+    /*background-color: red;*/
+    height: 50px;
+}
+
+.linkdenButton, .githubButton, .contactButton {
+    margin: 4px;
+    height: 35px;
+    background-color: rgb(116, 116, 116);
+    color: white;
+    border: none;
+    margin-top:15px;
+    border-radius: 2px;
+}
+
+.linkdenButton:hover, .githubButton:hover, .contactButton:hover {
+    opacity: 0.9;
+}
+
+.linkdenButton:hover, .githubButton:hover, .contactButton:active {
+    opacity: 0.7;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.highlights {
+    /*background-color: green;*/
+    height: 100px;
+}
+
+.latest {
+    /*background-color: orange;*/
+    height: 100px;
+}
