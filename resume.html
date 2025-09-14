@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | Alisa Guo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        dark: {
+                            900: '#0a0a0a',
+                            800: '#1a1a1a',
+                            700: '#2a2a2a',
+                            600: '#3a3a3a',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .tech-tag {
+            background-color: #2a2a2a;
+            color: #a5b4fc;
+            border-radius: 9999px;
+            padding: 0.25rem 0.75rem;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+        .download-btn {
+            transition: all 0.3s ease;
+        }
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(99, 102, 241, 0.1), 0 2px 4px -1px rgba(99, 102, 241, 0.06);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <nav class="bg-dark-800 border-b border-dark-700 fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold gradient-text">Alisa Guo</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                    <a href="about.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="projects.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                    <a href="resume.html" class="text-white px-3 py-2 rounded-md text-sm font-medium">Resume</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button p-2 rounded-md text-gray-400 hover:text-white focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h1 class="text-4xl font-bold mb-4">My <span class="gradient-text">Resume</span></h1>
+            <p class="text-gray-400 max-w-2xl mx-auto">Updated regularly with my latest experience and skills</p>
+        </div>
+        
+        <div class="flex justify-center mb-8" data-aos="fade-up" data-aos-delay="100">
+            <a href="/resume.pdf" download class="download-btn flex items-center px-6 py-3 bg-indigo-600 hover:bg-indigo-700 rounded-md text-white font-medium transition duration-300">
+                <i data-feather="download" class="w-5 h-5 mr-2"></i> Download PDF
+            </a>
+        </div>
+        
+        <div class="bg-dark-800 rounded-lg p-8 mb-8" data-aos="fade-up" data-aos-delay="200">
+            <div class="max-w-4xl mx-auto">
+                <div class="flex flex-col md:flex-row justify-between items-start mb-8">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-2">Alisa Guo</h2>
+                        <p class="text-gray-300">alisa.jingyi.guo@gmail.com | (437) 775-1043 | Mississauga, ON | github.com/Stickpie</p>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4 border-b border-dark-700 pb-2 gradient-text">Skills</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">AI</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Power Automate</span>
+                        <span class="tech-tag">Microsoft Office</span>
+                        <span class="tech-tag">Project Management</span>
+                        <span class="tech-tag">Hackathon Experience</span>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4 border-b border-dark-700 pb-2 gradient-text">Education</h3>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h4 class="text-lg font-semibold">Toronto Metropolitan University</h4>
+                            <p class="text-gray-400">BS, Computer Engineering</p>
+                        </div>
+                        <span class="text-gray-400 text-sm">Sept 2020 - Current</span>
+                    </div>
+                    <p class="text-gray-400">Mississauga, ON</p>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4 border-b border-dark-700 pb-2 gradient-text">Co-op Experience</h3>
+                    
+                    <div class="mb-6">
+                        <div class="flex justify-between items-start">
+                            <h4 class="text-lg font-semibold">Planning Assistant</h4>
+                            <span class="text-gray-400 text-sm">Aug 2024 – Aug 2025</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-2">Mubea Cyclone, Mississauga, ON</p>
+                        <div class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-gray-300">
+                            <div>•</div><div>Led a team of interns by providing job training, delegating responsibilities, and conducting individual check-ins</div>
+                            <div>•</div><div>Automated a daily reporting workflow (Power Automate, Excel, AutoHotKey), reducing a 30-minute manual task into a 2-minute automated process for projecting Power BI charts across 3 manufacturing plants</div>
+                            <div>•</div><div>Accurately entered and verified data in Excel sheets, comparing values and ensuring precise transfer into company systems</div>
+                            <div>•</div><div>Automated half of the printing process, so that work orders can be printed overnight</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between items-start">
+                            <h4 class="text-lg font-semibold">Data Analytics Intern</h4>
+                            <span class="text-gray-400 text-sm">Jun 2021 – Aug 2021</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-2">Regressor Studio, Mississauga, ON</p>
+                        <div class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-gray-300">
+                            <div>•</div><div>Summarized data by creating pivot tables, dashboards, and data visualizations of data sets</div>
+                            <div>•</div><div>Leveraged Excel VBA to assess and restructure 1M+ data items stored in CSV format</div>
+                            <div>•</div><div>Automated the analysis of Play Store Reviews using AI and Python to identify current trends</div>
+                            <div>•</div><div>Prepared PowerPoint of findings, and presented to key stakeholders</div>
+                        </div>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="flex justify-between items-start">
+                            <h4 class="text-lg font-semibold">Technical Project Assistant</h4>
+                            <span class="text-gray-400 text-sm">Jun 2022 – Aug 2022</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-2">Convergint, Mississauga, ON</p>
+                        <div class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-gray-300">
+                            <div>•</div><div>Increased efficiency by 30% through introducing new technological shortcuts, minimizing time required for labor-intensive processes</div>
+                            <div>•</div><div>Compiled data from different departments, then summarized everything into concise reports</div>
+                            <div>•</div><div>Managed and organized project files in Google Drive, ensuring all documents were accurately sorted into intuitive folders for easy access by team members</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4 border-b border-dark-700 pb-2 gradient-text">Projects</h3>
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold">Oracle Database System</h4>
+                        <div class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-gray-300">
+                            <div>•</div><div>Designed an Entity-Relationship model to serve as the foundation of the project proposal</div>
+                            <div>•</div><div>Wrote SQL queries to create tables according to Relational Database Design in the Oracle Database</div>
+                            <div>•</div><div>Verified system functionality by populating the database with test data and executing queries for debugging</div>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <h4 class="text-lg font-semibold">Online Game Website</h4>
+                        <div class="grid grid-cols-[auto_1fr] gap-x-4 gap-y-1 text-gray-300">
+                            <div>•</div><div>Created an online gaming website using Java N-layered architecture, then deployed it to the internet using Dockerhub and Kubernetes</div>
+                            <div>•</div><div>Conducted requirement analysis based on market and stakeholder needs</div>
+                            <div>•</div><div>Assigned group members to various tasks on Jira, then coordinated weekly report updates</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-xl font-bold mb-4 border-b border-dark-700 pb-2 gradient-text">Certifications</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="tech-tag">ICTC Cybersecurity</span>
+                        <span class="tech-tag">ICTC Artificial Intelligence</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-8 text-center text-gray-400 text-sm" data-aos="fade-up" data-aos-delay="300">
+            <p>Note: This is a preview. Download the full PDF version for complete details.</p>
+        </div>
+    </div>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+        
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'md:hidden hidden bg-dark-800 border-t border-dark-700 fixed inset-x-0 bottom-0 z-10 p-4';
+        mobileMenu.innerHTML = `
+            <div class="flex flex-col space-y-4">
+                <a href="index.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                <a href="about.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+                <a href="projects.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+                <a href="resume.html" class="text-white px-3 py-2 rounded-md text-sm font-medium">Resume</a>
+            </div>
+        `;
+        document.body.appendChild(mobileMenu);
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
